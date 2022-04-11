@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/ic_buscarorcamento.xml" value="0.3125" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.2994791666666667" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/activity_tela_buscar_orcamento.xml" value="0.36666666666666664" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/activity_tela_inicial.xml" value="0.3140625" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/activity_tela_produtos.xml" value="0.2627450980392157" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/activity_telha_thermoacustica.xml" value="0.33" />
+        <entry key="..\:/MyApplication2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.292" />
+        <entry key="..\:/MyApplication2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.292" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

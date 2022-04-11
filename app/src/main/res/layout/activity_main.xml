@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101D63"
+    tools:context="Tela_Cadastro">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="215dp"
+        android:layout_height="107dp"
+        android:layout_marginLeft="200dp"
+        android:src="@drawable/logo" />
+    <!-- Txt Cadastrar -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="20dp"
+        android:text="Cadastrar Cliente"
+        android:textSize="20dp"
+        android:textColor="@color/white">
+
+    </TextView>
+    <!-- Nome do Cliente -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nomecliente"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="140dp"
+        app:prefixTextColor="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Nome do Cliente"
+        app:counterEnabled="true"
+        app:counterMaxLength="25"
+        app:endIconMode="clear_text"
+        app:helperText="Campo Obrigatorio"
+        app:helperTextTextColor="@android:color/holo_red_dark"
+        app:startIconDrawable="@drawable/ic_addpessoa"
+        app:startIconTint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nome_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:maxLength="26" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- Telefone -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/telefone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="230dp"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Telefone"
+        app:counterEnabled="true"
+        app:counterMaxLength="11"
+        app:endIconMode="clear_text"
+        app:helperText="Campo Obrigatorio"
+        app:helperTextTextColor="@android:color/holo_red_dark"
+        app:startIconDrawable="@drawable/ic_telefone"
+        app:startIconTint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/telefone_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:maxLength="12" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- Endereço -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/endereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Endereço"
+        android:textColorHint="@color/white"
+        app:helperText="Campo Obrigatorio"
+        app:helperTextTextColor="@android:color/holo_red_dark"
+        app:hintTextColor="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:startIconDrawable="@drawable/ic_endereco"
+        app:startIconTint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="31"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- Cidade -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="410dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Cidade"
+        android:textColorHint="@color/white"
+        app:helperText="Campo Obrigatorio"
+        app:helperTextTextColor="@android:color/holo_red_dark"
+        app:hintTextColor="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:startIconDrawable="@drawable/ic_endereco"
+        app:startIconTint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="31"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- Data Orçamento -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/data"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginRight="20dp"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Data do Cadastro"
+        app:counterEnabled="true"
+        app:endIconMode="clear_text"
+        app:helperText="Campo Obrigatorio"
+        app:startIconDrawable="@drawable/ic_calendario"
+        app:startIconTint="@color/white"
+        app:helperTextTextColor="@android:color/holo_red_dark">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/datatxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- Botão Cadastrar -->
+    <Button
+        android:id="@+id/add_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="620dp"
+        android:text="Cadadastrar"
+        android:textColor="#070707"
+        app:backgroundTint="#FFFFFF" />
+
+</FrameLayout>

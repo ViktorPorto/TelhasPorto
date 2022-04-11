@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101D63"
+    tools:context=".Telha_Thermoacustica">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- Card Thermoacustica -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Foto Produto -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="194dp"
+                    android:contentDescription="telhathermo"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/telhathermo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Titulo Principal -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Telha Thermoacustica"
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                    <!-- Sub Titulo -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Galvalume Thermoacustica"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary" />
+
+                    <!-- Campo Cliente -->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/comp_cliente"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:hint="Nome Cliente"
+                        android:padding="5dp"
+                        android:textColorHint="@color/purple_700"
+                        app:boxStrokeColor="@color/purple_700"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="25"
+                        app:endIconMode="clear_text"
+                        app:helperText="Campo Obrigatorio"
+                        app:helperTextTextColor="@android:color/holo_red_dark"
+                        app:hintTextColor="@color/purple_700"
+                        app:prefixTextColor="@color/purple_700"
+                        app:startIconDrawable="@drawable/ic_pessoa"
+                        app:startIconTint="@color/purple_700">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/nomecliente_thermo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:inputType="text"
+                            android:maxLength="26"
+                            android:textColor="@color/purple_700" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Txt Seleção -->
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Seleção de Metodo:"
+                            android:textSize="15dp"
+                            android:textAppearance="?attr/textAppearanceHeadline6" />
+                    </FrameLayout>
+
+                    <!-- Seleção Metodo-->
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/metodo_linear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Metodo Linear" />
+
+                            <RadioButton
+                                android:id="@+id/metodo_area"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Metodo Area" />
+                        </RadioGroup>
+
+                    </FrameLayout>
+
+                    <!-- Campo Area -->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/area_thermo"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:hint="Area m²"
+                        android:visibility="gone"
+                        android:padding="5dp"
+                        android:textColorHint="@color/purple_700"
+                        app:boxStrokeColor="@color/purple_700"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="25"
+                        app:endIconMode="clear_text"
+                        app:helperText="Campo Obrigatorio"
+                        app:helperTextTextColor="@android:color/holo_red_dark"
+                        app:hintTextColor="@color/purple_700"
+                        app:prefixTextColor="@color/purple_700"
+                        app:startIconDrawable="@drawable/ic_regua"
+                        app:startIconTint="@color/purple_700">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txt_area_thermo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:inputType="number"
+                            android:maxLength="26"
+                            android:textColor="@color/purple_700" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Campo Comprimento -->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/comp_thermo"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:hint="Comprimento em Metros"
+                        android:visibility="gone"
+                        android:padding="5dp"
+                        android:textColorHint="@color/purple_700"
+                        app:boxStrokeColor="@color/purple_700"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="25"
+                        app:endIconMode="clear_text"
+                        app:helperText="Campo Obrigatorio"
+                        app:helperTextTextColor="@android:color/holo_red_dark"
+                        app:hintTextColor="@color/purple_700"
+                        app:prefixTextColor="@color/purple_700"
+                        app:startIconDrawable="@drawable/ic_regua"
+                        app:startIconTint="@color/purple_700">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/comprimento_thermo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:inputType="number"
+                            android:maxLength="26"
+                            android:textColor="@color/purple_700" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Campo Quantidade -->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/qtd_thermo"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:hint="Quantidade"
+                        android:visibility="gone"
+                        android:padding="5dp"
+                        android:textColorHint="@color/purple_700"
+                        app:boxStrokeColor="@color/purple_700"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="25"
+                        app:endIconMode="clear_text"
+                        app:helperText="Campo Obrigatorio"
+                        app:helperTextTextColor="@android:color/holo_red_dark"
+                        app:hintTextColor="@color/purple_700"
+                        app:prefixTextColor="@color/purple_700"
+                        app:startIconDrawable="@drawable/ic_qtd"
+                        app:startIconTint="@color/purple_700">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/quantidade_thermo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:inputType="number"
+                            android:maxLength="26"
+                            android:textColor="@color/purple_700" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Campo Preço -->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/prc_thermo"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:hint="Preço m²"
+                        android:padding="5dp"
+                        android:textColorHint="@color/purple_700"
+                        app:boxStrokeColor="@color/purple_700"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="25"
+                        app:endIconMode="clear_text"
+                        app:helperText="Campo Obrigatorio"
+                        app:helperTextTextColor="@android:color/holo_red_dark"
+                        app:hintTextColor="@color/purple_700"
+                        app:prefixTextColor="@color/purple_700"
+                        app:startIconDrawable="@drawable/ic_dinheiro"
+                        app:startIconTint="@color/purple_700">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/preco_thermo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:inputType="number"
+                            android:maxLength="26"
+                            android:textColor="@color/purple_700" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Botão Add+-->
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="95dp"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/purple_700"
+                            android:textColor="@color/white"
+                            android:text="+ Dimensões"
+                            style="?attr/materialButtonOutlinedStyle" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Botoes Finalizar/Add Produto-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.button.MaterialButton
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="230dp"
+                android:backgroundTint="@color/purple_700"
+                android:text="+ Produtos"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.button.MaterialButton
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Finalizar"
+                android:backgroundTint="@color/purple_700"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
